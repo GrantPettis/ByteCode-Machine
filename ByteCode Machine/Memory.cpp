@@ -117,7 +117,7 @@ static void blackenObject(Obj* object) {
         ObjClass* klass = (ObjClass*)object;
         markObject((Obj*)klass->name);
         //> Methods and Initializers mark-methods
-        markTable(&klass->methods);
+        klass->methods.markTable();
         //< Methods and Initializers mark-methods
         break;
     }
@@ -144,7 +144,7 @@ static void blackenObject(Obj* object) {
     case OBJ_INSTANCE: {
         ObjInstance* instance = (ObjInstance*)object;
         markObject((Obj*)instance->klass);
-        markTable(&instance->fields);
+        instance->fields.markTable();
         break;
     }
                      //< Classes and Instances blacken-instance
@@ -177,7 +177,7 @@ static void freeObject(Obj* object) {
     case OBJ_CLASS: {
         //> Methods and Initializers free-methods
         ObjClass* klass = (ObjClass*)object;
-        freeTable(&klass->methods);
+        klass->methods.freeTable();
         //< Methods and Initializers free-methods
         FREE(ObjClass, object);
         break;
@@ -205,7 +205,7 @@ static void freeObject(Obj* object) {
                      //> Classes and Instances free-instance
     case OBJ_INSTANCE: {
         ObjInstance* instance = (ObjInstance*)object;
-        freeTable(&instance->fields);
+        instance->fields.freeTable();
         FREE(ObjInstance, object);
         break;
     }
@@ -250,7 +250,7 @@ static void markRoots() {
     //< mark-open-upvalues
     //> mark-globals
 
-    markTable(&vm.globals);
+    vm.globals.markTable();
     //< mark-globals
     //> call-mark-compiler-roots
     markCompilerRoots();
@@ -313,7 +313,7 @@ void collectGarbage() {
     traceReferences();
     //< call-trace-references
     //> sweep-strings
-    tableRemoveWhite(&vm.strings);
+    vm.strings.tableRemoveWhite();
     //< sweep-strings
     //> call-sweep
     sweep();

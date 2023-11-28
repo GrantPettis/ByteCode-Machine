@@ -15,7 +15,7 @@ void initChunk(Chunk* chunk) {
     
     chunk->lines = NULL;
     
-    initValueArray(&chunk->constants);
+    chunk->constants.initValueArray();
    
 }
 
@@ -24,7 +24,7 @@ void freeChunk(Chunk* chunk) {
 
     FREE_ARRAY(int, chunk->lines, chunk->capacity);
    
-    freeValueArray(&chunk->constants);
+    chunk->constants.freeValueArray();
   
     initChunk(chunk);
 }
@@ -52,7 +52,7 @@ int addConstant(Chunk* chunk, Value value) {
    
     push(value);
   
-    writeValueArray(&chunk->constants, value);
+    chunk->constants.writeValueArray(value);
     
     pop();
    

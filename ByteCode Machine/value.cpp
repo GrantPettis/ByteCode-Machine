@@ -10,27 +10,27 @@
 #include "memory.h"
 #include "value.h"
 
-void initValueArray(ValueArray* array) {
-    array->values = NULL;
-    array->capacity = 0;
-    array->count = 0;
+void ValueArray :: initValueArray() {
+    this->values = NULL;
+    this->capacity = 0;
+    this->count = 0;
 }
 
-void writeValueArray(ValueArray* array, Value value) {
-    if (array->capacity < array->count + 1) {
-        int oldCapacity = array->capacity;
-        array->capacity = GROW_CAPACITY(oldCapacity);
-        array->values = GROW_ARRAY(Value, array->values,
-            oldCapacity, array->capacity);
+void ValueArray :: writeValueArray(Value value) {
+    if (this->capacity < this->count + 1) {
+        int oldCapacity = this->capacity;
+        this->capacity = GROW_CAPACITY(oldCapacity);
+        this->values = GROW_ARRAY(Value, this->values,
+            oldCapacity, this->capacity);
     }
 
-    array->values[array->count] = value;
-    array->count++;
+    this->values[this->count] = value;
+    this->count++;
 }
 
-void freeValueArray(ValueArray* array) {
-    FREE_ARRAY(Value, array->values, array->capacity);
-    initValueArray(array);
+void ValueArray :: freeValueArray() {
+    FREE_ARRAY(Value, this->values, this->capacity);
+    initValueArray();
 }
 
 void printValue(Value value) {

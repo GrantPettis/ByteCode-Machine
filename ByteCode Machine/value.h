@@ -37,12 +37,7 @@ typedef uint64_t Value;
 
 #define IS_OBJ(value) \
     (((value) & (QNAN | SIGN_BIT)) == (QNAN | SIGN_BIT))
-//< is-obj
-//> as-number
-
-//> as-bool
 #define AS_BOOL(value)      ((value) == TRUE_VAL)
-//< as-bool
 #define AS_NUMBER(value)    valueToNum(value)
 
 #define AS_OBJ(value) \
@@ -121,19 +116,16 @@ typedef struct {
 #endif
 
 
-typedef struct {
+
+class ValueArray {
+public :
     int capacity;
     int count;
     Value* values;
-} ValueArray;
-
+    void initValueArray();
+    void writeValueArray( Value value);
+    void freeValueArray();
+};
 bool valuesEqual(Value a, Value b);
-
-void initValueArray(ValueArray* array);
-void writeValueArray(ValueArray* array, Value value);
-void freeValueArray(ValueArray* array);
-
 void printValue(Value value);
-
-
 #endif
