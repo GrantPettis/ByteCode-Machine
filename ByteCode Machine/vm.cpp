@@ -69,7 +69,7 @@ static void defineNative(const char* name, NativeFn function) {
 }
 
 
-void initVM() {
+void VM :: initVM() {
 
     resetStack();
 
@@ -99,7 +99,7 @@ void initVM() {
 
 }
 
-void freeVM() {
+void VM :: freeVM() {
    
     vm.globals.freeTable();
   vm.strings.freeTable();

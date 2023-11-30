@@ -23,15 +23,18 @@ typedef enum {
 } TokenType;
 
 
-typedef struct {
+
+
+
+class Token {
+public:
+	static void initScanner(const char* source);
 	TokenType type;
 	const char* start;
 	int length;
 	int line;
-} Token;
 
+};
 
-void initScanner(const char* source);
 Token scanToken();
-
 #endif

@@ -6,55 +6,53 @@
 #include "memory.h"
 
 #include "vm.h"
+#include "iostream"
 
 
-void initChunk(Chunk* chunk) {
-    chunk->count = 0;
-    chunk->capacity = 0;
-    chunk->code = NULL;
+void Chunk :: initChunk() {
+    this->count = 0;
+    this->capacity = 0;
+    this->code = NULL;
     
-    chunk->lines = NULL;
+    this->lines = NULL;
     
-    chunk->constants.initValueArray();
-   
+    this->constants.initValueArray();
 }
 
-void freeChunk(Chunk* chunk) {
-    FREE_ARRAY(uint8_t, chunk->code, chunk->capacity);
+void Chunk :: freeChunk() {
+    FREE_ARRAY(uint8_t, this->code, this->capacity);
 
-    FREE_ARRAY(int, chunk->lines, chunk->capacity);
+    FREE_ARRAY(int, this->lines, this->capacity);
    
-    chunk->constants.freeValueArray();
+    this->constants.freeValueArray();
   
-    initChunk(chunk);
+    initChunk();
 }
-void writeChunk(Chunk* chunk, uint8_t byte, int line) {
+void Chunk :: writeChunk(uint8_t byte, int line) {
 
-    if (chunk->capacity < chunk->count + 1) {
-        int oldCapacity = chunk->capacity;
-        chunk->capacity = GROW_CAPACITY(oldCapacity);
-        chunk->code = GROW_ARRAY(uint8_t, chunk->code,
-            oldCapacity, chunk->capacity);
+    if (this->capacity < this->count + 1) {
+        int oldCapacity = this->capacity;
+        this->capacity = GROW_CAPACITY(oldCapacity);
+        this->code = GROW_ARRAY(uint8_t, this->code, oldCapacity, this->capacity);
      
-        chunk->lines = GROW_ARRAY(int, chunk->lines,
-            oldCapacity, chunk->capacity);
+        this->lines = GROW_ARRAY(int, this->lines, oldCapacity, this->capacity);
    
     }
 
-    chunk->code[chunk->count] = byte;
+    this->code[this->count] = byte;
  
-    chunk->lines[chunk->count] = line;
+    this->lines[this->count] = line;
   
-    chunk->count++;
+    this->count++;
 }
 
-int addConstant(Chunk* chunk, Value value) {
+int Chunk :: addConstant(Value value) {
    
     push(value);
   
-    chunk->constants.writeValueArray(value);
+    this->constants.writeValueArray(value);
     
     pop();
    
-    return chunk->constants.count - 1;
+    return this->constants.count - 1;
 }

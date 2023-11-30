@@ -46,9 +46,13 @@ typedef enum {
 	OP_METHOD
 } OpCode;
 
+class Chunk {
+	public :
+	void initChunk();
+	void freeChunk();
 
-typedef struct {
-	
+	void writeChunk(uint8_t byte, int line);
+	int addConstant(Value value);
 	int count;
 	int capacity;
 
@@ -56,13 +60,7 @@ typedef struct {
 	int* lines;
 
 	ValueArray constants;
+};
 
-} Chunk;
 
-
-void initChunk(Chunk* chunk);
-void freeChunk(Chunk* chunk);
-
-void writeChunk(Chunk* chunk, uint8_t byte, int line);
-int addConstant(Chunk* chunk, Value value);
 #endif

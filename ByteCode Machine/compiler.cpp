@@ -141,7 +141,7 @@ static bool match(TokenType type) {
     return true;
 }
 static void emitByte(uint8_t byte) {
-    writeChunk(currentChunk(), byte, parser.previous.line);
+    currentChunk()->writeChunk(byte, parser.previous.line);
 }
 static void emitBytes(uint8_t byte1, uint8_t byte2) {
     emitByte(byte1);
@@ -177,7 +177,7 @@ static void emitReturn() {
 }
 
 static uint8_t makeConstant(Value value) {
-    int constant = addConstant(currentChunk(), value);
+    int constant = currentChunk()->addConstant(value);
     if (constant > UINT8_MAX) {
         error("Too many constants in one chunk.");
         return 0;
@@ -1101,7 +1101,7 @@ static void statement() {
 
 ObjFunction* compile(const char* source) {
 
-    initScanner(source);
+    Token :: initScanner(source);
     Compiler compiler;
 
     initCompiler(&compiler, TYPE_SCRIPT);

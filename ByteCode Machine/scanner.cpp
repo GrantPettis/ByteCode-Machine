@@ -12,8 +12,8 @@ typedef struct {
 } Scanner;
 
 Scanner scanner;
-//> init-scanner
-void initScanner(const char* source) {
+
+void Token :: initScanner(const char* source) {
     scanner.start = source;
     scanner.current = source;
     scanner.line = 1;
@@ -177,9 +177,9 @@ static Token identifier() {
 static Token number() {
     while (isDigit(peek())) advance();
 
-    // Look for a fractional part.
+  
     if (peek() == '.' && isDigit(peekNext())) {
-        // Consume the ".".
+     
         advance();
 
         while (isDigit(peek())) advance();
@@ -187,8 +187,7 @@ static Token number() {
 
     return makeToken(TOKEN_NUMBER);
 }
-//< number
-//> string
+
 static Token string() {
     while (peek() != '"' && !isAtEnd()) {
         if (peek() == '\n') scanner.line++;
@@ -197,28 +196,24 @@ static Token string() {
 
     if (isAtEnd()) return errorToken("Unterminated string.");
 
-    // The closing quote.
+   
     advance();
     return makeToken(TOKEN_STRING);
 }
-//< string
-//> scan-token
 Token scanToken() {
-    //> call-skip-whitespace
+    
     skipWhitespace();
-    //< call-skip-whitespace
+    
     scanner.start = scanner.current;
 
-    if (isAtEnd()) return makeToken(TOKEN_EOF);
-    //> scan-char
+    if (isAtEnd()) return makeToken(TOKEN_EOF); 
 
     char c = advance();
-    //> scan-identifier
+
     if (isAlpha(c)) return identifier();
-    //< scan-identifier
-    //> scan-number
+  
     if (isDigit(c)) return number();
-    //< scan-number
+   
 
     switch (c) {
     case '(': return makeToken(TOKEN_LEFT_PAREN);

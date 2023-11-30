@@ -75,7 +75,7 @@ static void runFile(const char* path) {
 
 int main(int argc, const char* argv[]) {
 
-    initVM();
+    vm.initVM();
     if (argc == 1) {
         repl();
     }
@@ -87,6 +87,6 @@ int main(int argc, const char* argv[]) {
         exit(64);
     }
 
-    freeVM();
+    vm.freeVM();
     return 0;
 }

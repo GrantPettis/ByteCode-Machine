@@ -197,7 +197,7 @@ static void freeObject(Obj* object) {
                     //> Calls and Functions free-function
     case OBJ_FUNCTION: {
         ObjFunction* function = (ObjFunction*)object;
-        freeChunk(&function->chunk);
+        function->chunk.freeChunk();
         FREE(ObjFunction, object);
         break;
     }
