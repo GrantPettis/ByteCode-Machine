@@ -49,6 +49,57 @@
     <Filter Include="Resource Files\Test Cases\for">
       <UniqueIdentifier>{81446643-5762-4eec-b8ac-0e780f01eae4}</UniqueIdentifier>
     </Filter>
+    <Filter Include="Resource Files\Test Cases\function">
+      <UniqueIdentifier>{42703c5d-9322-4e96-8e4c-0701f490bcaa}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Resource Files\Test Cases\if">
+      <UniqueIdentifier>{1b7c928a-6c4c-496e-a81b-d3a840f823ab}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Resource Files\Test Cases\inheritence">
+      <UniqueIdentifier>{2da9a53f-ebd3-41b2-98f7-911becda08b5}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Resource Files\Test Cases\logical_operator">
+      <UniqueIdentifier>{0c62f91d-d20f-4ddc-9a29-17aeec44f28f}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Resource Files\Test Cases\method">
+      <UniqueIdentifier>{587b0ca3-71f2-47cd-925b-cb46f3393b9f}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Resource Files\Test Cases\nil">
+      <UniqueIdentifier>{0e4797ec-a7d3-4160-b6ac-a55769f18664}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Resource Files\Test Cases\numbers">
+      <UniqueIdentifier>{dc0fe621-6fac-4248-b8ba-49a4d11ca8d2}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Resource Files\Test Cases\operators">
+      <UniqueIdentifier>{b3243dd5-c9cf-4c52-8b8b-80781136b16b}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Resource Files\Test Cases\print">
+      <UniqueIdentifier>{e19b303e-50fa-4983-af18-da8dbf816153}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Resource Files\Test Cases\regression">
+      <UniqueIdentifier>{739e335b-aef0-421f-9a61-0800f33032ef}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Resource Files\Test Cases\return">
+      <UniqueIdentifier>{998475c4-9bf2-4a4b-bd68-a393b161ce4f}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Resource Files\Test Cases\scanning">
+      <UniqueIdentifier>{6c878334-ae55-4105-8ecc-1855b042ec53}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Resource Files\Test Cases\strings">
+      <UniqueIdentifier>{6024d7f5-3afc-4f37-ab3f-1c719cd99c5b}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Resource Files\Test Cases\super">
+      <UniqueIdentifier>{650c88ee-33b5-4b35-9185-9a73b0ba0a43}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Resource Files\Test Cases\this">
+      <UniqueIdentifier>{da2cd331-6945-4258-b3e1-b42c9f150f39}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Resource Files\Test Cases\variable">
+      <UniqueIdentifier>{0162967b-9f69-467f-a2c2-d9c87b6b08e6}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Resource Files\Test Cases\while">
+      <UniqueIdentifier>{50d347c8-e747-449a-ad30-3df33d383b39}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="ByteCode Machine.cpp">
@@ -387,6 +438,441 @@
     </None>
     <None Include="var_in_body.lox">
       <Filter>Resource Files\Test Cases\for</Filter>
+    </None>
+    <None Include="body_must_be_block.lox">
+      <Filter>Resource Files\Test Cases\function</Filter>
+    </None>
+    <None Include="empty_body.lox">
+      <Filter>Resource Files\Test Cases\function</Filter>
+    </None>
+    <None Include="local_mutual_recursion.lox">
+      <Filter>Resource Files\Test Cases\function</Filter>
+    </None>
+    <None Include="local_recursion.lox">
+      <Filter>Resource Files\Test Cases\function</Filter>
+    </None>
+    <None Include="missing_arguments_function.lox">
+      <Filter>Resource Files\Test Cases\function</Filter>
+    </None>
+    <None Include="missing_comma_in_parameters.lox">
+      <Filter>Resource Files\Test Cases\function</Filter>
+    </None>
+    <None Include="mutual_recursion.lox">
+      <Filter>Resource Files\Test Cases\function</Filter>
+    </None>
+    <None Include="nested_call_with_arguments.lox">
+      <Filter>Resource Files\Test Cases\function</Filter>
+    </None>
+    <None Include="parameters.lox">
+      <Filter>Resource Files\Test Cases\function</Filter>
+    </None>
+    <None Include="print.lox">
+      <Filter>Resource Files\Test Cases\function</Filter>
+    </None>
+    <None Include="recursion.lox">
+      <Filter>Resource Files\Test Cases\function</Filter>
+    </None>
+    <None Include="too_many_arguments.lox">
+      <Filter>Resource Files\Test Cases\function</Filter>
+    </None>
+    <None Include="too_many_parameters.lox">
+      <Filter>Resource Files\Test Cases\function</Filter>
+    </None>
+    <None Include="class_in_else.lox">
+      <Filter>Resource Files\Test Cases\if</Filter>
+    </None>
+    <None Include="class_in_then.lox">
+      <Filter>Resource Files\Test Cases\if</Filter>
+    </None>
+    <None Include="dangling_else.lox">
+      <Filter>Resource Files\Test Cases\if</Filter>
+    </None>
+    <None Include="else.lox">
+      <Filter>Resource Files\Test Cases\if</Filter>
+    </None>
+    <None Include="fun_in_else.lox">
+      <Filter>Resource Files\Test Cases\if</Filter>
+    </None>
+    <None Include="fun_in_then.lox">
+      <Filter>Resource Files\Test Cases\if</Filter>
+    </None>
+    <None Include="if.lox">
+      <Filter>Resource Files\Test Cases\if</Filter>
+    </None>
+    <None Include="truth.lox">
+      <Filter>Resource Files\Test Cases\if</Filter>
+    </None>
+    <None Include="var_in_else.lox">
+      <Filter>Resource Files\Test Cases\if</Filter>
+    </None>
+    <None Include="var_in_then.lox">
+      <Filter>Resource Files\Test Cases\if</Filter>
+    </None>
+    <None Include="constructor.lox">
+      <Filter>Resource Files\Test Cases\inheritence</Filter>
+    </None>
+    <None Include="inherit_from_function.lox">
+      <Filter>Resource Files\Test Cases\inheritence</Filter>
+    </None>
+    <None Include="inherit_from_nil.lox">
+      <Filter>Resource Files\Test Cases\inheritence</Filter>
+    </None>
+    <None Include="inherit_from_number.lox">
+      <Filter>Resource Files\Test Cases\inheritence</Filter>
+    </None>
+    <None Include="inherit_methods.lox">
+      <Filter>Resource Files\Test Cases\inheritence</Filter>
+    </None>
+    <None Include="parenthesized_superclass.lox">
+      <Filter>Resource Files\Test Cases\inheritence</Filter>
+    </None>
+    <None Include="set_fields_from_base_class.lox">
+      <Filter>Resource Files\Test Cases\inheritence</Filter>
+    </None>
+    <None Include="and.lox">
+      <Filter>Resource Files\Test Cases\logical_operator</Filter>
+    </None>
+    <None Include="and_truth.lox">
+      <Filter>Resource Files\Test Cases\logical_operator</Filter>
+    </None>
+    <None Include="or.lox">
+      <Filter>Resource Files\Test Cases\logical_operator</Filter>
+    </None>
+    <None Include="or_truth.lox">
+      <Filter>Resource Files\Test Cases\logical_operator</Filter>
+    </None>
+    <None Include="arity.lox">
+      <Filter>Resource Files\Test Cases\method</Filter>
+    </None>
+    <None Include="empty_block.lox">
+      <Filter>Resource Files\Test Cases\method</Filter>
+    </None>
+    <None Include="extra_arguments_method.lox">
+      <Filter>Resource Files\Test Cases\method</Filter>
+    </None>
+    <None Include="missing_arguments_method.lox">
+      <Filter>Resource Files\Test Cases\method</Filter>
+    </None>
+    <None Include="refer_to_name.lox">
+      <Filter>Resource Files\Test Cases\method</Filter>
+    </None>
+    <None Include="too_many_arguments_method.lox">
+      <Filter>Resource Files\Test Cases\method</Filter>
+    </None>
+    <None Include="too_many_parameters_method.lox">
+      <Filter>Resource Files\Test Cases\method</Filter>
+    </None>
+    <None Include="literal.lox">
+      <Filter>Resource Files\Test Cases\nil</Filter>
+    </None>
+    <None Include="decimal_point_at_eof.lox">
+      <Filter>Resource Files\Test Cases\numbers</Filter>
+    </None>
+    <None Include="leading_dot.lox">
+      <Filter>Resource Files\Test Cases\numbers</Filter>
+    </None>
+    <None Include="literals.lox">
+      <Filter>Resource Files\Test Cases\numbers</Filter>
+    </None>
+    <None Include="nan_equality.lox">
+      <Filter>Resource Files\Test Cases\numbers</Filter>
+    </None>
+    <None Include="trailing_dot.lox">
+      <Filter>Resource Files\Test Cases\numbers</Filter>
+    </None>
+    <None Include="add.lox">
+      <Filter>Resource Files\Test Cases\operators</Filter>
+    </None>
+    <None Include="add_bool_nil.lox">
+      <Filter>Resource Files\Test Cases\operators</Filter>
+    </None>
+    <None Include="add_bool_num.lox">
+      <Filter>Resource Files\Test Cases\operators</Filter>
+    </None>
+    <None Include="add_bool_string.lox">
+      <Filter>Resource Files\Test Cases\operators</Filter>
+    </None>
+    <None Include="add_nil_nil.lox">
+      <Filter>Resource Files\Test Cases\operators</Filter>
+    </None>
+    <None Include="add_num_nil.lox">
+      <Filter>Resource Files\Test Cases\operators</Filter>
+    </None>
+    <None Include="add_string_nil.lox">
+      <Filter>Resource Files\Test Cases\operators</Filter>
+    </None>
+    <None Include="comparison.lox">
+      <Filter>Resource Files\Test Cases\operators</Filter>
+    </None>
+    <None Include="divide.lox">
+      <Filter>Resource Files\Test Cases\operators</Filter>
+    </None>
+    <None Include="divide_nonnum_num.lox">
+      <Filter>Resource Files\Test Cases\operators</Filter>
+    </None>
+    <None Include="divide_num_nonnum.lox">
+      <Filter>Resource Files\Test Cases\operators</Filter>
+    </None>
+    <None Include="equals.lox">
+      <Filter>Resource Files\Test Cases\operators</Filter>
+    </None>
+    <None Include="equals_class.lox">
+      <Filter>Resource Files\Test Cases\operators</Filter>
+    </None>
+    <None Include="equals_method.lox">
+      <Filter>Resource Files\Test Cases\operators</Filter>
+    </None>
+    <None Include="greater_nonnum_num.lox">
+      <Filter>Resource Files\Test Cases\operators</Filter>
+    </None>
+    <None Include="greater_num_nonnum.lox">
+      <Filter>Resource Files\Test Cases\operators</Filter>
+    </None>
+    <None Include="greater_or_equal_nonnum_num.lox">
+      <Filter>Resource Files\Test Cases\operators</Filter>
+    </None>
+    <None Include="greater_or_equal_num_nonnum.lox">
+      <Filter>Resource Files\Test Cases\operators</Filter>
+    </None>
+    <None Include="less_nonnum_num.lox">
+      <Filter>Resource Files\Test Cases\operators</Filter>
+    </None>
+    <None Include="less_num_nonnum.lox">
+      <Filter>Resource Files\Test Cases\operators</Filter>
+    </None>
+    <None Include="less_or_equal_nonnum_num.lox">
+      <Filter>Resource Files\Test Cases\operators</Filter>
+    </None>
+    <None Include="less_or_equal_num_nonnum.lox">
+      <Filter>Resource Files\Test Cases\operators</Filter>
+    </None>
+    <None Include="multiply.lox">
+      <Filter>Resource Files\Test Cases\operators</Filter>
+    </None>
+    <None Include="multiply_nonnum_num.lox">
+      <Filter>Resource Files\Test Cases\operators</Filter>
+    </None>
+    <None Include="multiply_num_nonnum.lox">
+      <Filter>Resource Files\Test Cases\operators</Filter>
+    </None>
+    <None Include="negate.lox">
+      <Filter>Resource Files\Test Cases\operators</Filter>
+    </None>
+    <None Include="not_class.lox">
+      <Filter>Resource Files\Test Cases\operators</Filter>
+    </None>
+    <None Include="subtract.lox">
+      <Filter>Resource Files\Test Cases\operators</Filter>
+    </None>
+    <None Include="subtract_nonnum_num.lox">
+      <Filter>Resource Files\Test Cases\operators</Filter>
+    </None>
+    <None Include="subtract_num_nonnum.lox">
+      <Filter>Resource Files\Test Cases\operators</Filter>
+    </None>
+    <None Include="missing_argument.lox">
+      <Filter>Resource Files\Test Cases\print</Filter>
+    </None>
+    <None Include="40.lox">
+      <Filter>Resource Files\Test Cases\regression</Filter>
+    </None>
+    <None Include="394.lox">
+      <Filter>Resource Files\Test Cases\regression</Filter>
+    </None>
+    <None Include="after_else.lox">
+      <Filter>Resource Files\Test Cases\return</Filter>
+    </None>
+    <None Include="after_if.lox">
+      <Filter>Resource Files\Test Cases\return</Filter>
+    </None>
+    <None Include="after_while.lox">
+      <Filter>Resource Files\Test Cases\return</Filter>
+    </None>
+    <None Include="at_top_level.lox">
+      <Filter>Resource Files\Test Cases\return</Filter>
+    </None>
+    <None Include="in_function.lox">
+      <Filter>Resource Files\Test Cases\return</Filter>
+    </None>
+    <None Include="in_method.lox">
+      <Filter>Resource Files\Test Cases\return</Filter>
+    </None>
+    <None Include="return_nil_if_no_value.lox">
+      <Filter>Resource Files\Test Cases\return</Filter>
+    </None>
+    <None Include="identifiers.lox">
+      <Filter>Resource Files\Test Cases\scanning</Filter>
+    </None>
+    <None Include="keywords.lox">
+      <Filter>Resource Files\Test Cases\scanning</Filter>
+    </None>
+    <None Include="numbers.lox">
+      <Filter>Resource Files\Test Cases\scanning</Filter>
+    </None>
+    <None Include="punctuators.lox">
+      <Filter>Resource Files\Test Cases\scanning</Filter>
+    </None>
+    <None Include="strings.lox">
+      <Filter>Resource Files\Test Cases\scanning</Filter>
+    </None>
+    <None Include="whitespace.lox">
+      <Filter>Resource Files\Test Cases\scanning</Filter>
+    </None>
+    <None Include="error_after_multiline.lox">
+      <Filter>Resource Files\Test Cases\strings</Filter>
+    </None>
+    <None Include="literals_strings.lox">
+      <Filter>Resource Files\Test Cases\strings</Filter>
+    </None>
+    <None Include="multiline.lox">
+      <Filter>Resource Files\Test Cases\strings</Filter>
+    </None>
+    <None Include="unterminated.lox">
+      <Filter>Resource Files\Test Cases\strings</Filter>
+    </None>
+    <None Include="bound_method.lox">
+      <Filter>Resource Files\Test Cases\super</Filter>
+    </None>
+    <None Include="call_other_method.lox">
+      <Filter>Resource Files\Test Cases\super</Filter>
+    </None>
+    <None Include="call_same_method.lox">
+      <Filter>Resource Files\Test Cases\super</Filter>
+    </None>
+    <None Include="closure.lox">
+      <Filter>Resource Files\Test Cases\super</Filter>
+    </None>
+    <None Include="constructor_super.lox">
+      <Filter>Resource Files\Test Cases\super</Filter>
+    </None>
+    <None Include="extra_arguments_super.lox">
+      <Filter>Resource Files\Test Cases\super</Filter>
+    </None>
+    <None Include="indirectly_inherited.lox">
+      <Filter>Resource Files\Test Cases\super</Filter>
+    </None>
+    <None Include="missing_arguments_super.lox">
+      <Filter>Resource Files\Test Cases\super</Filter>
+    </None>
+    <None Include="no_superclass_bind.lox">
+      <Filter>Resource Files\Test Cases\super</Filter>
+    </None>
+    <None Include="no_superclass_call.lox">
+      <Filter>Resource Files\Test Cases\super</Filter>
+    </None>
+    <None Include="no_superclass_method.lox">
+      <Filter>Resource Files\Test Cases\super</Filter>
+    </None>
+    <None Include="parenthesized.lox">
+      <Filter>Resource Files\Test Cases\super</Filter>
+    </None>
+    <None Include="reassign_superclass.lox">
+      <Filter>Resource Files\Test Cases\super</Filter>
+    </None>
+    <None Include="closure_this.lox">
+      <Filter>Resource Files\Test Cases\this</Filter>
+    </None>
+    <None Include="nested_class.lox">
+      <Filter>Resource Files\Test Cases\this</Filter>
+    </None>
+    <None Include="nested_closure_this.lox">
+      <Filter>Resource Files\Test Cases\this</Filter>
+    </None>
+    <None Include="this_at_top_level.lox">
+      <Filter>Resource Files\Test Cases\this</Filter>
+    </None>
+    <None Include="this_in_method.lox">
+      <Filter>Resource Files\Test Cases\this</Filter>
+    </None>
+    <None Include="this_in_top_level_function.lox">
+      <Filter>Resource Files\Test Cases\this</Filter>
+    </None>
+    <None Include="collide_with_parameter.lox">
+      <Filter>Resource Files\Test Cases\variable</Filter>
+    </None>
+    <None Include="duplicate_local.lox">
+      <Filter>Resource Files\Test Cases\variable</Filter>
+    </None>
+    <None Include="duplicate_parameter.lox">
+      <Filter>Resource Files\Test Cases\variable</Filter>
+    </None>
+    <None Include="early_bound.lox">
+      <Filter>Resource Files\Test Cases\variable</Filter>
+    </None>
+    <None Include="in_middle_of_block.lox">
+      <Filter>Resource Files\Test Cases\variable</Filter>
+    </None>
+    <None Include="in_nested_block.lox">
+      <Filter>Resource Files\Test Cases\variable</Filter>
+    </None>
+    <None Include="local_from_method.lox">
+      <Filter>Resource Files\Test Cases\variable</Filter>
+    </None>
+    <None Include="redeclare_global.lox">
+      <Filter>Resource Files\Test Cases\variable</Filter>
+    </None>
+    <None Include="redefine_global.lox">
+      <Filter>Resource Files\Test Cases\variable</Filter>
+    </None>
+    <None Include="scope_reuse_in_different_blocks.lox">
+      <Filter>Resource Files\Test Cases\variable</Filter>
+    </None>
+    <None Include="shadow_and_local.lox">
+      <Filter>Resource Files\Test Cases\variable</Filter>
+    </None>
+    <None Include="shadow_global.lox">
+      <Filter>Resource Files\Test Cases\variable</Filter>
+    </None>
+    <None Include="shadow_local.lox">
+      <Filter>Resource Files\Test Cases\variable</Filter>
+    </None>
+    <None Include="undefined_global.lox">
+      <Filter>Resource Files\Test Cases\variable</Filter>
+    </None>
+    <None Include="undefined_local.lox">
+      <Filter>Resource Files\Test Cases\variable</Filter>
+    </None>
+    <None Include="uninitialized.lox">
+      <Filter>Resource Files\Test Cases\variable</Filter>
+    </None>
+    <None Include="unreached_undefined.lox">
+      <Filter>Resource Files\Test Cases\variable</Filter>
+    </None>
+    <None Include="use_false_as_var.lox">
+      <Filter>Resource Files\Test Cases\variable</Filter>
+    </None>
+    <None Include="use_global_in_initializer.lox">
+      <Filter>Resource Files\Test Cases\variable</Filter>
+    </None>
+    <None Include="use_local_in_initializer.lox">
+      <Filter>Resource Files\Test Cases\variable</Filter>
+    </None>
+    <None Include="use_nil_as_var.lox">
+      <Filter>Resource Files\Test Cases\variable</Filter>
+    </None>
+    <None Include="use_this_as_var.lox">
+      <Filter>Resource Files\Test Cases\variable</Filter>
+    </None>
+    <None Include="class_in_body_while.lox">
+      <Filter>Resource Files\Test Cases\while</Filter>
+    </None>
+    <None Include="closure_in_body_while.lox">
+      <Filter>Resource Files\Test Cases\while</Filter>
+    </None>
+    <None Include="fun_in_body_while.lox">
+      <Filter>Resource Files\Test Cases\while</Filter>
+    </None>
+    <None Include="return_closure_while.lox">
+      <Filter>Resource Files\Test Cases\while</Filter>
+    </None>
+    <None Include="return_inside_while.lox">
+      <Filter>Resource Files\Test Cases\while</Filter>
+    </None>
+    <None Include="syntax_while.lox">
+      <Filter>Resource Files\Test Cases\while</Filter>
+    </None>
+    <None Include="var_in_body_while.lox">
+      <Filter>Resource Files\Test Cases\while</Filter>
     </None>
   </ItemGroup>
 </Project>
