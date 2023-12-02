@@ -13,6 +13,42 @@
       <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
       <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
     </Filter>
+    <Filter Include="Resource Files\Test Cases">
+      <UniqueIdentifier>{e755cdfc-81af-49bb-85ef-80b2c9fab5b9}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Resource Files\Test Cases\assignment">
+      <UniqueIdentifier>{33a3a271-e80e-4e02-9b4b-42dcb67fd460}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Resource Files\Test Cases\benchmark">
+      <UniqueIdentifier>{79a020a8-bbd8-4d7c-bfd5-faf94870f4e7}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Resource Files\Test Cases\block">
+      <UniqueIdentifier>{1276ae23-5baf-4436-bb12-41aa00084012}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Resource Files\Test Cases\bool">
+      <UniqueIdentifier>{5d0f5466-6f09-4474-a4d7-1cbdff10d634}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Resource Files\Test Cases\call">
+      <UniqueIdentifier>{f2463aad-8b7f-4e2b-95f4-2a53033d67f3}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Resource Files\Test Cases\class">
+      <UniqueIdentifier>{0163ab5d-806e-4527-8d77-3a0347cff340}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Resource Files\Test Cases\closure">
+      <UniqueIdentifier>{12b98365-d1f6-4bed-8e27-63a41f2837b6}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Resource Files\Test Cases\comments">
+      <UniqueIdentifier>{a3af603e-ead3-4092-8647-db104d8d894e}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Resource Files\Test Cases\constructor">
+      <UniqueIdentifier>{1069e6d0-115b-4d89-82fe-0e7bb37a80ad}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Resource Files\Test Cases\field">
+      <UniqueIdentifier>{822565d1-d035-4b60-ac3c-999f75608015}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Resource Files\Test Cases\for">
+      <UniqueIdentifier>{81446643-5762-4eec-b8ac-0e780f01eae4}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="ByteCode Machine.cpp">
@@ -77,5 +113,280 @@
     <ClInclude Include="table.h">
       <Filter>Header Files</Filter>
     </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="associativity.lox">
+      <Filter>Resource Files\Test Cases\assignment</Filter>
+    </None>
+    <None Include="global.lox">
+      <Filter>Resource Files\Test Cases\assignment</Filter>
+    </None>
+    <None Include="grouping.lox">
+      <Filter>Resource Files\Test Cases\assignment</Filter>
+    </None>
+    <None Include="infix_operator.lox">
+      <Filter>Resource Files\Test Cases\assignment</Filter>
+    </None>
+    <None Include="local.lox">
+      <Filter>Resource Files\Test Cases\assignment</Filter>
+    </None>
+    <None Include="prefix_operator.lox">
+      <Filter>Resource Files\Test Cases\assignment</Filter>
+    </None>
+    <None Include="syntax.lox">
+      <Filter>Resource Files\Test Cases\assignment</Filter>
+    </None>
+    <None Include="to_this.lox">
+      <Filter>Resource Files\Test Cases\assignment</Filter>
+    </None>
+    <None Include="undefined.lox">
+      <Filter>Resource Files\Test Cases\assignment</Filter>
+    </None>
+    <None Include="binary_trees.lox">
+      <Filter>Resource Files\Test Cases\benchmark</Filter>
+    </None>
+    <None Include="equality.lox">
+      <Filter>Resource Files\Test Cases\benchmark</Filter>
+    </None>
+    <None Include="fib.lox">
+      <Filter>Resource Files\Test Cases\benchmark</Filter>
+    </None>
+    <None Include="instantiation.lox">
+      <Filter>Resource Files\Test Cases\benchmark</Filter>
+    </None>
+    <None Include="invocation.lox">
+      <Filter>Resource Files\Test Cases\benchmark</Filter>
+    </None>
+    <None Include="method_call.lox">
+      <Filter>Resource Files\Test Cases\benchmark</Filter>
+    </None>
+    <None Include="properties.lox">
+      <Filter>Resource Files\Test Cases\benchmark</Filter>
+    </None>
+    <None Include="string_equality.lox">
+      <Filter>Resource Files\Test Cases\benchmark</Filter>
+    </None>
+    <None Include="trees.lox">
+      <Filter>Resource Files\Test Cases\benchmark</Filter>
+    </None>
+    <None Include="zoo.lox">
+      <Filter>Resource Files\Test Cases\benchmark</Filter>
+    </None>
+    <None Include="zoo_batch.lox">
+      <Filter>Resource Files\Test Cases\benchmark</Filter>
+    </None>
+    <None Include="empty.lox">
+      <Filter>Resource Files\Test Cases\block</Filter>
+    </None>
+    <None Include="scope.lox">
+      <Filter>Resource Files\Test Cases\block</Filter>
+    </None>
+    <None Include="equality_bool.lox">
+      <Filter>Resource Files\Test Cases\bool</Filter>
+    </None>
+    <None Include="not.lox">
+      <Filter>Resource Files\Test Cases\bool</Filter>
+    </None>
+    <None Include="bool.lox">
+      <Filter>Resource Files\Test Cases\call</Filter>
+    </None>
+    <None Include="nil.lox">
+      <Filter>Resource Files\Test Cases\call</Filter>
+    </None>
+    <None Include="num.lox">
+      <Filter>Resource Files\Test Cases\call</Filter>
+    </None>
+    <None Include="object.lox">
+      <Filter>Resource Files\Test Cases\call</Filter>
+    </None>
+    <None Include="string.lox">
+      <Filter>Resource Files\Test Cases\call</Filter>
+    </None>
+    <None Include="empty_class.lox">
+      <Filter>Resource Files\Test Cases\class</Filter>
+    </None>
+    <None Include="inherit_self.lox">
+      <Filter>Resource Files\Test Cases\class</Filter>
+    </None>
+    <None Include="inherited_method.lox">
+      <Filter>Resource Files\Test Cases\class</Filter>
+    </None>
+    <None Include="local_inherit_other.lox">
+      <Filter>Resource Files\Test Cases\class</Filter>
+    </None>
+    <None Include="local_inherit_self.lox">
+      <Filter>Resource Files\Test Cases\class</Filter>
+    </None>
+    <None Include="local_reference_self.lox">
+      <Filter>Resource Files\Test Cases\class</Filter>
+    </None>
+    <None Include="reference_self.lox">
+      <Filter>Resource Files\Test Cases\class</Filter>
+    </None>
+    <None Include="assign_to_closure.lox">
+      <Filter>Resource Files\Test Cases\closure</Filter>
+    </None>
+    <None Include="assign_to_shadowed_later.lox">
+      <Filter>Resource Files\Test Cases\closure</Filter>
+    </None>
+    <None Include="close_over_function_parameter.lox">
+      <Filter>Resource Files\Test Cases\closure</Filter>
+    </None>
+    <None Include="close_over_later_variable.lox">
+      <Filter>Resource Files\Test Cases\closure</Filter>
+    </None>
+    <None Include="close_over_method_parameter.lox">
+      <Filter>Resource Files\Test Cases\closure</Filter>
+    </None>
+    <None Include="closed_closure_in_function.lox">
+      <Filter>Resource Files\Test Cases\closure</Filter>
+    </None>
+    <None Include="open_closure_in_function.lox">
+      <Filter>Resource Files\Test Cases\closure</Filter>
+    </None>
+    <None Include="reference_closure_multiple_times.lox">
+      <Filter>Resource Files\Test Cases\closure</Filter>
+    </None>
+    <None Include="reuse_closure_slot.lox">
+      <Filter>Resource Files\Test Cases\closure</Filter>
+    </None>
+    <None Include="shadow_closure_with_local.lox">
+      <Filter>Resource Files\Test Cases\closure</Filter>
+    </None>
+    <None Include="unused_closure.lox">
+      <Filter>Resource Files\Test Cases\closure</Filter>
+    </None>
+    <None Include="unused_later_closure.lox">
+      <Filter>Resource Files\Test Cases\closure</Filter>
+    </None>
+    <None Include="line_at_eof.lox">
+      <Filter>Resource Files\Test Cases\comments</Filter>
+    </None>
+    <None Include="only_line_comment.lox">
+      <Filter>Resource Files\Test Cases\comments</Filter>
+    </None>
+    <None Include="only_line_comment_and_line.lox">
+      <Filter>Resource Files\Test Cases\comments</Filter>
+    </None>
+    <None Include="unicode.lox">
+      <Filter>Resource Files\Test Cases\comments</Filter>
+    </None>
+    <None Include="arguments.lox">
+      <Filter>Resource Files\Test Cases\constructor</Filter>
+    </None>
+    <None Include="call_init_early_return.lox">
+      <Filter>Resource Files\Test Cases\constructor</Filter>
+    </None>
+    <None Include="call_init_explicitly.lox">
+      <Filter>Resource Files\Test Cases\constructor</Filter>
+    </None>
+    <None Include="default.lox">
+      <Filter>Resource Files\Test Cases\constructor</Filter>
+    </None>
+    <None Include="default_arguments.lox">
+      <Filter>Resource Files\Test Cases\constructor</Filter>
+    </None>
+    <None Include="early_return.lox">
+      <Filter>Resource Files\Test Cases\constructor</Filter>
+    </None>
+    <None Include="extra_arguments.lox">
+      <Filter>Resource Files\Test Cases\constructor</Filter>
+    </None>
+    <None Include="init_not_method.lox">
+      <Filter>Resource Files\Test Cases\constructor</Filter>
+    </None>
+    <None Include="missing_arguments.lox">
+      <Filter>Resource Files\Test Cases\constructor</Filter>
+    </None>
+    <None Include="return_in_nested_function.lox">
+      <Filter>Resource Files\Test Cases\constructor</Filter>
+    </None>
+    <None Include="return_value.lox">
+      <Filter>Resource Files\Test Cases\constructor</Filter>
+    </None>
+    <None Include="call_function_field.lox">
+      <Filter>Resource Files\Test Cases\field</Filter>
+    </None>
+    <None Include="call_nonfunction_field.lox">
+      <Filter>Resource Files\Test Cases\field</Filter>
+    </None>
+    <None Include="get_and_set_method.lox">
+      <Filter>Resource Files\Test Cases\field</Filter>
+    </None>
+    <None Include="get_on_bool.lox">
+      <Filter>Resource Files\Test Cases\field</Filter>
+    </None>
+    <None Include="get_on_class.lox">
+      <Filter>Resource Files\Test Cases\field</Filter>
+    </None>
+    <None Include="many.lox">
+      <Filter>Resource Files\Test Cases\field</Filter>
+    </None>
+    <None Include="method.lox">
+      <Filter>Resource Files\Test Cases\field</Filter>
+    </None>
+    <None Include="method_binds_this.lox">
+      <Filter>Resource Files\Test Cases\field</Filter>
+    </None>
+    <None Include="on_instance.lox">
+      <Filter>Resource Files\Test Cases\field</Filter>
+    </None>
+    <None Include="set_evaluation_order.lox">
+      <Filter>Resource Files\Test Cases\field</Filter>
+    </None>
+    <None Include="set_on_bool.lox">
+      <Filter>Resource Files\Test Cases\field</Filter>
+    </None>
+    <None Include="set_on_class.lox">
+      <Filter>Resource Files\Test Cases\field</Filter>
+    </None>
+    <None Include="set_on_function.lox">
+      <Filter>Resource Files\Test Cases\field</Filter>
+    </None>
+    <None Include="set_on_nil.lox">
+      <Filter>Resource Files\Test Cases\field</Filter>
+    </None>
+    <None Include="set_on_num.lox">
+      <Filter>Resource Files\Test Cases\field</Filter>
+    </None>
+    <None Include="set_on_string.lox">
+      <Filter>Resource Files\Test Cases\field</Filter>
+    </None>
+    <None Include="undefined_field.lox">
+      <Filter>Resource Files\Test Cases\field</Filter>
+    </None>
+    <None Include="class_in_body.lox">
+      <Filter>Resource Files\Test Cases\for</Filter>
+    </None>
+    <None Include="closure_in_body.lox">
+      <Filter>Resource Files\Test Cases\for</Filter>
+    </None>
+    <None Include="fun_in_body.lox">
+      <Filter>Resource Files\Test Cases\for</Filter>
+    </None>
+    <None Include="return_closure.lox">
+      <Filter>Resource Files\Test Cases\for</Filter>
+    </None>
+    <None Include="return_inside.lox">
+      <Filter>Resource Files\Test Cases\for</Filter>
+    </None>
+    <None Include="scope_for.lox">
+      <Filter>Resource Files\Test Cases\for</Filter>
+    </None>
+    <None Include="statement_condition.lox">
+      <Filter>Resource Files\Test Cases\for</Filter>
+    </None>
+    <None Include="statement_increment.lox">
+      <Filter>Resource Files\Test Cases\for</Filter>
+    </None>
+    <None Include="statement_initializer.lox">
+      <Filter>Resource Files\Test Cases\for</Filter>
+    </None>
+    <None Include="syntax_for.lox">
+      <Filter>Resource Files\Test Cases\for</Filter>
+    </None>
+    <None Include="var_in_body.lox">
+      <Filter>Resource Files\Test Cases\for</Filter>
+    </None>
   </ItemGroup>
 </Project>
