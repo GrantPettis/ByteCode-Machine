@@ -1,0 +1,6 @@
+loop
+10.779
+elapsed
+14.054
+equals
+3.275

@@ -37,9 +37,6 @@
     <Filter Include="Resource Files\Test Cases\closure">
       <UniqueIdentifier>{12b98365-d1f6-4bed-8e27-63a41f2837b6}</UniqueIdentifier>
     </Filter>
-    <Filter Include="Resource Files\Test Cases\comments">
-      <UniqueIdentifier>{a3af603e-ead3-4092-8647-db104d8d894e}</UniqueIdentifier>
-    </Filter>
     <Filter Include="Resource Files\Test Cases\constructor">
       <UniqueIdentifier>{1069e6d0-115b-4d89-82fe-0e7bb37a80ad}</UniqueIdentifier>
     </Filter>
@@ -283,9 +280,6 @@
     <None Include="close_over_function_parameter.lox">
       <Filter>Resource Files\Test Cases\closure</Filter>
     </None>
-    <None Include="close_over_later_variable.lox">
-      <Filter>Resource Files\Test Cases\closure</Filter>
-    </None>
     <None Include="close_over_method_parameter.lox">
       <Filter>Resource Files\Test Cases\closure</Filter>
     </None>
@@ -303,24 +297,6 @@
     </None>
     <None Include="shadow_closure_with_local.lox">
       <Filter>Resource Files\Test Cases\closure</Filter>
-    </None>
-    <None Include="unused_closure.lox">
-      <Filter>Resource Files\Test Cases\closure</Filter>
-    </None>
-    <None Include="unused_later_closure.lox">
-      <Filter>Resource Files\Test Cases\closure</Filter>
-    </None>
-    <None Include="line_at_eof.lox">
-      <Filter>Resource Files\Test Cases\comments</Filter>
-    </None>
-    <None Include="only_line_comment.lox">
-      <Filter>Resource Files\Test Cases\comments</Filter>
-    </None>
-    <None Include="only_line_comment_and_line.lox">
-      <Filter>Resource Files\Test Cases\comments</Filter>
-    </None>
-    <None Include="unicode.lox">
-      <Filter>Resource Files\Test Cases\comments</Filter>
     </None>
     <None Include="arguments.lox">
       <Filter>Resource Files\Test Cases\constructor</Filter>
@@ -388,19 +364,10 @@
     <None Include="set_on_bool.lox">
       <Filter>Resource Files\Test Cases\field</Filter>
     </None>
-    <None Include="set_on_class.lox">
-      <Filter>Resource Files\Test Cases\field</Filter>
-    </None>
     <None Include="set_on_function.lox">
       <Filter>Resource Files\Test Cases\field</Filter>
     </None>
     <None Include="set_on_nil.lox">
-      <Filter>Resource Files\Test Cases\field</Filter>
-    </None>
-    <None Include="set_on_num.lox">
-      <Filter>Resource Files\Test Cases\field</Filter>
-    </None>
-    <None Include="set_on_string.lox">
       <Filter>Resource Files\Test Cases\field</Filter>
     </None>
     <None Include="undefined_field.lox">
@@ -416,9 +383,6 @@
       <Filter>Resource Files\Test Cases\for</Filter>
     </None>
     <None Include="return_closure.lox">
-      <Filter>Resource Files\Test Cases\for</Filter>
-    </None>
-    <None Include="return_inside.lox">
       <Filter>Resource Files\Test Cases\for</Filter>
     </None>
     <None Include="scope_for.lox">

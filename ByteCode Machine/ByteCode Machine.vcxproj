@@ -187,7 +187,6 @@
     <None Include="class_in_then.lox" />
     <None Include="closed_closure_in_function.lox" />
     <None Include="close_over_function_parameter.lox" />
-    <None Include="close_over_later_variable.lox" />
     <None Include="close_over_method_parameter.lox" />
     <None Include="closure.lox" />
     <None Include="closure_in_body.lox" />
@@ -259,7 +258,6 @@
     <None Include="less_num_nonnum.lox" />
     <None Include="less_or_equal_nonnum_num.lox" />
     <None Include="less_or_equal_num_nonnum.lox" />
-    <None Include="line_at_eof.lox" />
     <None Include="literal.lox" />
     <None Include="literals.lox" />
     <None Include="literals_strings.lox" />
@@ -299,8 +297,6 @@
     <None Include="num.lox" />
     <None Include="numbers.lox" />
     <None Include="object.lox" />
-    <None Include="only_line_comment.lox" />
-    <None Include="only_line_comment_and_line.lox" />
     <None Include="on_instance.lox" />
     <None Include="open_closure_in_function.lox" />
     <None Include="or.lox" />
@@ -321,7 +317,6 @@
     <None Include="refer_to_name.lox" />
     <None Include="return_closure.lox" />
     <None Include="return_closure_while.lox" />
-    <None Include="return_inside.lox" />
     <None Include="return_inside_while.lox" />
     <None Include="return_in_nested_function.lox" />
     <None Include="return_nil_if_no_value.lox" />
@@ -333,11 +328,8 @@
     <None Include="set_evaluation_order.lox" />
     <None Include="set_fields_from_base_class.lox" />
     <None Include="set_on_bool.lox" />
-    <None Include="set_on_class.lox" />
     <None Include="set_on_function.lox" />
     <None Include="set_on_nil.lox" />
-    <None Include="set_on_num.lox" />
-    <None Include="set_on_string.lox" />
     <None Include="shadow_and_local.lox" />
     <None Include="shadow_closure_with_local.lox" />
     <None Include="shadow_global.lox" />
@@ -369,12 +361,9 @@
     <None Include="undefined_field.lox" />
     <None Include="undefined_global.lox" />
     <None Include="undefined_local.lox" />
-    <None Include="unicode.lox" />
     <None Include="uninitialized.lox" />
     <None Include="unreached_undefined.lox" />
     <None Include="unterminated.lox" />
-    <None Include="unused_closure.lox" />
-    <None Include="unused_later_closure.lox" />
     <None Include="use_false_as_var.lox" />
     <None Include="use_global_in_initializer.lox" />
     <None Include="use_local_in_initializer.lox" />
