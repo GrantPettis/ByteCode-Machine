@@ -1,2 +1,2 @@
-got method
-arg
+foo1
+1
