@@ -11,4 +11,4 @@ The rest of the repo is all of the test cases broken down into different bins fo
 The benchmark file contains more complicated tests. The rest are mainly individual unit tests
 
 
-If you wish to test it. You may compile the code and use the command prompt to test. 
+If you wish to test it. You may compile the code and use the command prompt to test. For a windows machine this is the path to use to test a file C:\Users\grant\source\repos\ByteCode Machine\x64\Debug>"ByteCode Machine.exe" "..\..\ByteCode Machine\assignment\associativity.lox"
