@@ -9,7 +9,7 @@
 #include "iostream"
 
 
-void Chunk :: initChunk() {
+void Chunk :: chunck() {
     this->count = 0;
     this->capacity = 0;
     this->code = NULL;
@@ -26,7 +26,7 @@ void Chunk :: freeChunk() {
    
     this->constants.freeValueArray();
   
-    initChunk();
+    chunck();
 }
 void Chunk :: writeChunk(uint8_t byte, int line) {
 

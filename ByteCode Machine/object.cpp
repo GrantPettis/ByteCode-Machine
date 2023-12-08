@@ -56,7 +56,7 @@ ObjFunction* newFunction() {
     function->arity = 0;
     function->upvalueCount = 0;
     function->name = NULL;
-    function->chunk.initChunk();
+    function->chunk.chunck();
     return function;
 }
 ObjInstance* newInstance(ObjClass* klass) {

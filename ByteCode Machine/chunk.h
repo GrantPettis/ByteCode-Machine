@@ -48,7 +48,7 @@ typedef enum {
 
 class Chunk {
 	public :
-	void initChunk();
+	void chunck();
 	void freeChunk();
 
 	void writeChunk(uint8_t byte, int line);

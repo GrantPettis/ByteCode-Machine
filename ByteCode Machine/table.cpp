@@ -1,4 +1,3 @@
-//> Hash Tables table-c
 #include <stdlib.h>
 #include <string.h>
 
